@@ -1,0 +1,138 @@
+@import url('http://fonts.googleapis.com/css?family=Lobster');
+
+body, div, section, h1, article, form, p, h3, input {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Gliph';
+	src: url(../fonts/glyphicons-halflings-regular.ttf)
+}
+body {
+
+	background-image: url(../images/background.png);
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+body section {
+	width: 750px;
+	height: 320px;
+	margin: 30px auto;
+	padding: 20px;
+	background-color: #333333;
+}
+body section article {
+	width: 350px;
+	height: 215px;
+	float: left;
+	background-color: #232323;
+	text-align: center;
+	color: white;
+	padding: 10px;
+}
+body section article p {
+	margin-bottom: 5px;
+}
+body section article p:before {
+	font-family: Gliph;
+	content: "\e089"
+}
+
+body section article p#fire:before {
+	font-family: Gliph;
+	content: "\e104";
+	font-size: 55px;
+}
+
+body section hr {
+	margin-bottom: 25px;
+}
+
+body section form {
+	width: 350px;
+	height: 215px;
+	float: right;
+}
+
+body section header {
+	background-color: #679966;
+	padding: 5px;
+	color: white;
+	margin-bottom: 10px;
+	text-align: center;
+	font-family: lobster;
+}
+
+body form h3 {
+	text-align: center;
+	color: white;
+	margin-bottom: 15px;
+}
+
+body form input {
+	width: 90%;
+	height: 35px;
+	margin-bottom: 20px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border: none;
+}
+
+body form input[type="text"] {
+	padding-left: 15px;
+}
+
+body form input[type="submit"] {
+	background-color: #232323;
+	color: white;
+	width: 100%;
+	border-radius: 5px;
+}
+
+body form input[type="submit"]:hover {
+	background-color: #679966;
+	cursor: pointer;
+}
+
+body form p {
+	width: 10%;
+	height: 35px;
+	display: inline-block;
+	background-color: #679966;
+	float: left;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	text-align: center;
+	padding-top: 8px;
+	color: #555555;
+}
+
+body form p#user:before{
+	font-family: Gliph;
+	content: "\e008"
+}
+body form p#country:before{
+	font-family: Gliph;
+	content: "\e135"
+}
+
+@media all and (max-width: 600px) {
+	body section {
+		width: 100%;
+		height: auto;
+		display: inline-block;
+	}
+
+	body section article {
+		width: 100%;
+	}
+
+	body section form {
+		width: 100%;
+		margin-top: 20px;
+	}
+}
