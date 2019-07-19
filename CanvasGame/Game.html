@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Testing Canvas Game</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        #wrapper{
+            background-image: url("resources/divbackground.jpg");
+            background-size: 600px 600px;
+            background-repeat: no-repeat;
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+        #canvas {
+            border: 2px solid black;
+        }
+        #info {
+            float: left;
+        }
+        p {
+            font-family: fantasy;
+            color: burlywood;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+<div id="info">
+    <p id="score"></p>
+    <p id="lives"></p>
+</div>
+<div id="wrapper">
+    <canvas id="canvas" width="600" height="600"></canvas>
+</div>
+<script src="scripts/player.js"></script>
+<script src="scripts/coin.js"></script>
+<script src="scripts/bomb.js"></script>
+<script src="scripts/framework.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
